@@ -1,0 +1,92 @@
+[
+  {
+    "questionText": "What does HTML stand for?",
+    "answerOptions": [
+      { "answerText": "Hyper Text Markup Language", "isCorrect": true },
+      { "answerText": "Hyperlinks and Text Markup Language", "isCorrect": false },
+      { "answerText": "Home Tool Markup Language", "isCorrect": false },
+      { "answerText": "Hyperlink and Text Markup Language", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What is the full form of CSS?",
+    "answerOptions": [
+      { "answerText": "Cascading Style Sheets", "isCorrect": true },
+      { "answerText": "Cascading System Sheets", "isCorrect": false },
+      { "answerText": "Creative Style Sheets", "isCorrect": false },
+      { "answerText": "Computer Style Sheets", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What does JavaScript primarily do?",
+    "answerOptions": [
+      { "answerText": "Make web pages interactive", "isCorrect": true },
+      { "answerText": "Style web pages", "isCorrect": false },
+      { "answerText": "Store data in databases", "isCorrect": false },
+      { "answerText": "Send emails", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Which programming language is known as the 'back-end' language?",
+    "answerOptions": [
+      { "answerText": "Java", "isCorrect": false },
+      { "answerText": "Python", "isCorrect": false },
+      { "answerText": "Node.js", "isCorrect": true },
+      { "answerText": "HTML", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What is a database?",
+    "answerOptions": [
+      { "answerText": "A collection of related data", "isCorrect": true },
+      { "answerText": "A computer program", "isCorrect": false },
+      { "answerText": "A type of web server", "isCorrect": false },
+      { "answerText": "A form of encryption", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What does HTTP stand for?",
+    "answerOptions": [
+      { "answerText": "Hyper Text Transfer Protocol", "isCorrect": true },
+      { "answerText": "Hyperlink Transfer Text Protocol", "isCorrect": false },
+      { "answerText": "Home Tool Transfer Protocol", "isCorrect": false },
+      { "answerText": "Hyper Transfer Text Protocol", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Which data structure uses Last In, First Out (LIFO) principle?",
+    "answerOptions": [
+      { "answerText": "Stack", "isCorrect": true },
+      { "answerText": "Queue", "isCorrect": false },
+      { "answerText": "Linked List", "isCorrect": false },
+      { "answerText": "Tree", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What is the purpose of version control systems like Git?",
+    "answerOptions": [
+      { "answerText": "To track changes to files and collaborate with others", "isCorrect": true },
+      { "answerText": "To write code faster", "isCorrect": false },
+      { "answerText": "To store user data securely", "isCorrect": false },
+      { "answerText": "To optimize website performance", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Which of the following is NOT a JavaScript framework?",
+    "answerOptions": [
+      { "answerText": "React", "isCorrect": false },
+      { "answerText": "Angular", "isCorrect": false },
+      { "answerText": "Django", "isCorrect": true },
+      { "answerText": "Vue.js", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What does SQL stand for?",
+    "answerOptions": [
+      { "answerText": "Structured Query Language", "isCorrect": true },
+      { "answerText": "Structured Question Language", "isCorrect": false },
+      { "answerText": "System Query Language", "isCorrect": false },
+      { "answerText": "System Question Language", "isCorrect": false }
+    ]
+  }
+]
