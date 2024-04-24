@@ -7,7 +7,6 @@ import User from "./Component/User";
 function App() {
   return (
     <div className="container">
-      {/* <Quiz /> */}
       <Router>
         <Routes>
           <Route exact path="/" element={<User/>} />

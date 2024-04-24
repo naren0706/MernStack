@@ -37,9 +37,8 @@
   transition: all 1s ease-in-out;
   z-index: 1000;
   // border-radius: 0;
-  animation: 1s leaderboard ;
+  animation: 1s leaderboard;
 }
-
 
 .user-container {
   font-size: 2rem;
@@ -74,7 +73,36 @@
     padding: 0.4rem;
     margin: 2rem;
     width: 70%;
+    transition: all 0.1s ease-in-out;
   }
+}
+
+.style1 {
+  box-shadow: var(--primary-color) 0px 0px 5px 5px;
+}
+.style2 {
+  box-shadow: var(--secondary-color) 0px 0px 5px 5px;
+}
+.style3 {
+  box-shadow: skyblue 0px 0px 5px 5px;
+}
+.style4 {
+  box-shadow: greenyellow 0px 0px 5px 5px;
+}
+.style5 {
+  box-shadow: blueviolet 0px 0px 5px 5px;
+}
+.style6 {
+  box-shadow: orangered 0px 0px 5px 5px;
+}
+.style7 {
+  box-shadow: rgb(212, 18, 18) 0px 0px 5px 5px;
+}
+.style8 {
+  box-shadow: rgb(135, 235, 148) 0px 0px 5px 5px;
+}
+.style9 {
+  box-shadow: rgb(255, 0, 0) 0px 0px 5px 5px;
 }
 .title {
   font-size: 2rem;

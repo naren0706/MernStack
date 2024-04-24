@@ -8,10 +8,16 @@ import LeaderBoard from "./LeaderBoard";
 function User() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
+  const [style, setStyle] = useState("");
   const [leaderBoardActive, setLeaderBoardActive] = useState(false);
   //get the name from the input box
   const handleChange = (e) => {
     setName(e.target.value);
+    const styles = [];
+    for (let index = 0; index < 10; index++) {
+      styles.push("style" + index);
+    }
+    setStyle(styles[Math.floor(Math.random() * styles.length)]);
   };
   //check the name is available in the backend or not
   const isNameAvailable = async () => {
@@ -77,7 +83,7 @@ function User() {
             type="text"
             name="Name"
             id="Name"
-            className="input-name"
+            className={"input-name " + style}
             value={name}
             onChange={handleChange}
           />
