@@ -1,0 +1,32 @@
+/* App.css */
+@import url('./variables.scss');
+*{
+}
+body{
+  background-color: var(--dark-color);  
+}
+
+.container{
+  min-height: fit-content;
+  // height: 100vh;
+  position: relative;
+}
+.quiz {
+  // padding: 10rem;
+  // background-color: var(--light-color);
+}
+
+.question {
+}
+
+.answer-options {
+}
+
+.answer-options button {
+}
+
+.answer-options button:hover {
+}
+
+.result {
+}

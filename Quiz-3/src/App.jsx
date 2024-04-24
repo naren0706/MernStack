@@ -1,17 +1,21 @@
-
-import './App.css'
-import Quiz from './Component/Quiz'
-import Test1 from './Component/Test1'
+import "./Styles/App.scss";
+import Quiz from "./Component/Quiz";
+import "./Styles/index.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import User from "./Component/User";
 
 function App() {
-
   return (
-    
-    <div className="App">
-      {/* <Test1/> */}
-      <Quiz />
+    <div className="container">
+      {/* <Quiz /> */}
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<User/>} />
+          <Route exact path="Quiz" element={<Quiz/>} />
+        </Routes>
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

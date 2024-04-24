@@ -26,7 +26,19 @@ async function getQuestionsFromMongoDB(callback) {
         await client.close();
     }
 }
-
+app.get('/api/LeaderBoard', async (req, res) => {
+    const client = new MongoClient(MONGODB_URI);
+    try {
+        await client.connect();
+        const database = client.db("QuizApp");
+        const results = database.collection("results");
+        const resultArray = await results.find().sort({ score: -1 }).toArray();
+        return res.json(resultArray)
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+})
 app.get('/api/getUser', async (req, res) => {
     const client = new MongoClient(MONGODB_URI);
     try {

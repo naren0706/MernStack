@@ -1,0 +1,97 @@
+@import url("./variables.scss");
+
+@keyframes delay-view {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.leaderboard {
+  &-container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-color);
+    font-size: 2rem;
+    position: relative;
+    opacity: 1;
+    animation: delay-view .3s ease-in-out .5s;
+    animation-fill-mode: backwards;
+  }
+  &-title {
+    text-align: center;
+    width: 60%;
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-table {
+    //background-color: pink;
+    border: 2px solid var(--primary-color);
+    width: 60%;
+    position: relative;
+    top: 3rem;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    & td,
+    th {
+      //border: 0.5px solid var(--secondary-color);
+      padding: 0.5rem;
+      color: var(--light-color);
+    }
+    & tbody tr {
+      outline: 2px solid var(--primary-color);
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      &:first-child{
+        &::after{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: url("./../assets/first-rank.svg");
+          height: 2rem;
+          width: 2rem;
+          // background-color: pink;
+        }
+      }
+      &:nth-child(2){
+        &::after{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: url("./../assets/second-rank.svg");
+          height: 2rem;
+          width: 2rem;
+          // background-color: pink;
+        }
+      }
+      &:nth-child(3){
+        &::after{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: url("./../assets/third-rank.svg");
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+      &:hover {
+        outline: 2px solid var(--light-color);
+        box-shadow: var(--primary-color) 0px 0px 5px 5px;
+      }
+    }
+  }
+}
+.message{
+  cursor: pointer;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: var(--secondary-color);
+}
