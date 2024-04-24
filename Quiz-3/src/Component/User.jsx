@@ -14,7 +14,7 @@ function User() {
   const handleChange = (e) => {
     setName(e.target.value);
     const styles = [];
-    for (let index = 0; index < 10; index++) {
+    for (let index = 1; index <= 10; index++) {
       styles.push("style" + index);
     }
     setStyle(styles[Math.floor(Math.random() * styles.length)]);
